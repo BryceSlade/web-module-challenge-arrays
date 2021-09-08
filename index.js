@@ -45,13 +45,10 @@ Use the copy function below to do the following:
   2. Return a copy of the received array  
 */
 
-function copy(originalFlavors){
-  const copyNum = originalFlavors.slice(0);
-  return copyNum
-}    
 
-function copy(oringalFlavors){
-  return newArray = [...originalFlavors];  //this one
+
+function copy(originalFlavors){
+  return [...originalFlavors];  //this one
 }
 
 console.log(copy(originalFlavors))
@@ -78,7 +75,7 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
      return false
 }
 
-console.log(is31Flavors(originalFlavors))
+console.log("hi there", is31Flavors(originalFlavors))
 
 
 
@@ -98,14 +95,23 @@ Use the addFlavor function below to do the following:
 
 
 
-
-let newFlavor = "Rainbow Sherbert"
 function addFlavor(originalFlavors, newFlavor){
   originalFlavors.unshift(newFlavor);
   return originalFlavors
 }
 
-console.log(addFlavor(originalFlavors, newFlavor))
+console.log(addFlavor(originalFlavors, "Rainbow Sherbert"))
+
+
+
+
+// let newFlavor = "Rainbow Sherbert"
+// function addFlavor(originalFlavors, newFlavor){
+//   originalFlavors.unshift(newFlavor);
+//   return originalFlavors
+// }
+
+// console.log(addFlavor(originalFlavors, newFlavor))
 
 
 
@@ -170,9 +176,9 @@ Use the removeFlavorByName function below to do the following:
 */
 
 
-function removeFlavorByName(array, string){
-  array.splice(27, 1)
-  return array
+function removeFlavorByName(){
+  // array.splice(27, 1)
+  // return array
 }
 
 console.log(removeFlavorByName(originalFlavors, "Rocky Road"))
@@ -236,8 +242,6 @@ module.exports = {
   getFlavorByIndex,
   removeFlavorByName,
   copy,
-  filterByWord,
-  getAverageWordLength,
-  getRandomFlavors
+  filterByWord
 }
 
